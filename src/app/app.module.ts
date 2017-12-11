@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+
+/* Import all the angular material modules in this module.
+ * Make sure this module stays below BrowserModule */
+import { AngularMaterialModule } from './angular.material.module';
 
 import { AppComponent } from './app.component';
 
@@ -11,12 +14,12 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatButtonModule,
-    MatCheckboxModule
+    AngularMaterialModule
   ],
   declarations: [
     AppComponent
   ],
   bootstrap: [ AppComponent ]
 })
+
 export class AppModule { }
