@@ -2,7 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
+/* Import all the angular material modules in this module.
+ * Make sure this module stays below BrowserModule */
+import { AngularMaterialModule } from './angular.material.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -15,6 +19,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    AngularMaterialModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
@@ -26,4 +32,5 @@ const appRoutes: Routes = [
   ],
   bootstrap: [ AppComponent ]
 })
+
 export class AppModule { }
