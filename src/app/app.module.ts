@@ -11,28 +11,32 @@ import { AngularMaterialModule } from './angular.material.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { SalutationComponent } from './salutation/salutation.component';
+import { MomentService } from "./services/moment/moment.service";
 
 const appRoutes: Routes = [
-  { path: 'login', component: LoginComponent },
-  ];
+    { path: 'login', component: LoginComponent },
+];
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    AngularMaterialModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
-  ],
-  declarations: [
-    AppComponent,
-    LoginComponent
-  ],
-  bootstrap: [ AppComponent ]
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        AngularMaterialModule,
+        RouterModule.forRoot(
+            appRoutes,
+            { enableTracing: true } // <-- debugging purposes only
+        )
+    ],
+    declarations: [
+        AppComponent,
+        LoginComponent,
+        SalutationComponent
+    ],
+    bootstrap: [ AppComponent ],
+    providers: [ MomentService ]
 })
 
 export class AppModule { }
