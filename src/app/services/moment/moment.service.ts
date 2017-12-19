@@ -9,11 +9,11 @@ export class MomentService {
     }
 
     public getCurrentTime():any {
-        return moment().format('hh:mm:ss');
+        return moment().format('HH:mm');
     }
 
     public getCurrentHour():any {
-        return moment().format('hh');
+        return moment().format('HH');
     }
 
     public getCurrentMinutes():any {
