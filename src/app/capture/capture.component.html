@@ -1,0 +1,18 @@
+<mat-card class="capture-container">
+    <mat-card-content>
+        <ack-webcam
+                [(ref)]   = "webcam"
+                [options] = "options"
+                (success) = "onCamSuccess($event)"
+                (catch)   = "onCamError($event)"
+        ></ack-webcam>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-fab color="primary">Base64</button>
+        <button mat-fab color="primary">Form Post Data</button>
+
+        <!--<button (click)="genBase64()"> generate base64 </button>
+        <button (click)="genPostData()"> generate post data </button>-->
+    </mat-card-actions>
+</mat-card>
