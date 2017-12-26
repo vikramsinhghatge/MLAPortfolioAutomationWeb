@@ -10,11 +10,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularMaterialModule } from './angular.material.module';
 
 import { WebCamModule } from 'ack-angular-webcam';
+import { ChartModule } from 'angular-highcharts';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SalutationComponent } from './salutation/salutation.component';
 import { CaptureComponent } from "./capture/capture.component";
+import { ChartComponent } from "./chart/chart.component";
 import { MomentService } from "./services/moment/moment.service";
 import { WindowService } from "./services/window/window.service";
 
@@ -30,6 +32,7 @@ const appRoutes: Routes = [
         ReactiveFormsModule,
         AngularMaterialModule,
         WebCamModule,
+        ChartModule,
         RouterModule.forRoot(
             appRoutes,
             { enableTracing: true } // <-- debugging purposes only
@@ -39,7 +42,8 @@ const appRoutes: Routes = [
         AppComponent,
         LoginComponent,
         SalutationComponent,
-        CaptureComponent
+        CaptureComponent,
+        ChartComponent
     ],
     bootstrap: [ AppComponent ],
     providers: [ MomentService, WindowService ]
