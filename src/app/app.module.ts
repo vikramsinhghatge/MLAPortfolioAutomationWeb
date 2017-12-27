@@ -15,6 +15,10 @@ import { ChartModule } from 'angular-highcharts';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RequestComponent } from './dashboard/request/request.component';
+import { WaitingListComponent } from './dashboard/waitingList/waitingList.component';
+import { EditDataComponent } from './dashboard/editData/editData.component';
+import { AnalyticsComponent } from './dashboard/analytics/analytics.component';
 import { SalutationComponent } from './salutation/salutation.component';
 import { CaptureComponent } from "./capture/capture.component";
 import { ChartComponent } from "./chart/chart.component";
@@ -26,7 +30,13 @@ const appRoutes: Routes = [
       path: 'login', component: LoginComponent
     },
     { path: 'dashboard',
-      component: DashboardComponent
+      component: DashboardComponent,
+      children: [
+        { path: 'request', component: RequestComponent },
+        { path: 'waitingList', component: WaitingListComponent },
+        { path: 'editData', component: EditDataComponent },
+        { path: 'analytics', component: AnalyticsComponent }
+      ]
     }
 ];
 
@@ -48,6 +58,10 @@ const appRoutes: Routes = [
         AppComponent,
         LoginComponent,
         DashboardComponent,
+        RequestComponent,
+        WaitingListComponent,
+        EditDataComponent,
+        AnalyticsComponent,
         SalutationComponent,
         CaptureComponent,
         ChartComponent
