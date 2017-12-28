@@ -3,7 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /* Import all the angular material modules in this module.
  * Make sure this module stays below BrowserModule */
@@ -45,6 +45,7 @@ const appRoutes: Routes = [
         BrowserModule,
         BrowserAnimationsModule,
         HttpClientModule,
+        FormsModule,
         ReactiveFormsModule,
         AngularMaterialModule,
         WebCamModule,

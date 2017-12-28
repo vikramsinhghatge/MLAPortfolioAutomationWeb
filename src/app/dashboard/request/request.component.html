@@ -1,1 +1,68 @@
-Request
+<div class="row justify-content-center align-items-center">
+  <h3>Visitor Details</h3>
+</div>
+<form>
+  <div class="form-group">
+    <label for="rqName">Name</label>
+    <input type="text" class="form-control" id="rqName" placeholder="Enter name">
+  </div>
+
+  <div class="form-group">
+    <label for="rqEmailId">Email Address</label>
+    <input type="email" class="form-control" id="rqEmailId" aria-describedby="rqEmailHelp" placeholder="Enter email">
+    <small id="rqEmailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="rqContactNo">Contact Number</label>
+    <input type="number" class="form-control" id="rqContactNo" placeholder="Enter contact number">
+  </div>
+
+  <div class="form-group">
+    <label for="rqAddress">Address</label>
+    <textarea class="form-control" id="rqAddress" rows="3"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="rqOccupation">Select Occupation</label>
+    <select class="form-control" id="rqOccupation">
+      <option>Service - Private</option>
+      <option>Service - Public</option>
+      <option>Business</option>
+      <option>Student</option>
+      <option>Un-Employed</option>
+      <option>Other</option>
+    </select>
+    <div class="form-group">
+      <label for="rqOccupationDetails">Occupational Details</label>
+      <textarea class="form-control" id="rqOccupationDetails" rows="3"></textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="rqAttachment">Attach Document</label>
+    <input type="file" class="form-control-file" id="rqAttachment" aria-describedby="rqAttachmentHelp">
+    <small id="rqAttachmentHelp" class="form-text text-muted">Select from File OR Camera</small>
+  </div>
+
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Add person to the waiting queue
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="rqDocuments">Do you have below documents</label>
+    <select multiple class="form-control" id="rqDocuments">
+      <option>AADHAR</option>
+      <option>PAN Card</option>
+      <option>Voter ID Card</option>
+    </select>
+  </div>
+
+  <div class="row h-100 justify-content-center align-items-center">
+    <button type="submit" class="btn btn-primary mr-1">Submit</button>
+    <button type="button" class="btn btn-default ml-1">Cancel</button>
+  </div>
+</form>
