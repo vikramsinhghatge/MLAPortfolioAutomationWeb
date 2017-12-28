@@ -1,6 +1,7 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import './marerial-icons.css';
 @import "~bootstrap/dist/css/bootstrap.css";
+@import "font-awesome.min.css";
 
 body {
     background: #0147A7;

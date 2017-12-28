@@ -12,6 +12,91 @@ main {
   margin-top: 80px;
 }
 
+.light_gry_bg {
+  background-color: #ececed;
+  padding: 64px 0 20px 0;
+}
+
+.footer-support {
+  padding: 45px 0;
+}
+
+p.link-box a {
+  color: red;
+  font-size: 16px;
+}
+
+.clearfix {
+  display: block;
+}
+
+.contactcard {
+  background: #ffffff;
+}
+
+.footer-support .icon-box {
+  float: left;
+  margin-right: 15px;
+  width: 40px;
+}
+
+.footer-support .details-box {
+  font-size: 16px;
+  color: #666;
+  height: 80px;
+}
+
+.footer-support h4 {
+  font-size: 24px;
+  color: #666;
+  margin-top: 0;
+}
+
+.footer-support p.link-box {
+  margin-top: 10px;
+}
+
+.ohidden {
+  overflow: hidden;
+}
+
+.footer-support .accordion-trgr-2 {
+  padding: 10px 15px;
+  background: #eaeaea;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-support .accordion-container-2 {
+  padding: 10px 20px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.footer-support .accordion-trgr-2 .fa-chevron-circle-right {
+  background-position: -480px 0;
+  width: 20px;
+  height: 11px;
+  float: right;
+  margin-top: 10px;
+}
+
+.docs-footer {
+  margin-top: 0 !important;
+}
+
+@media (min-width: 576px) {
+ .homepage-contact {
+   min-width: 720px;
+ }
+}
+
 /* FOOTER THEME */
 .docs-footer {
   margin-top: 40px;
@@ -31,12 +116,6 @@ main {
   height: 50px;
 }
 
-.docs-footer-copyright {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-}
-
 .docs-footer-links ul {
   list-style: none;
   margin: 0 40px;
@@ -52,6 +131,30 @@ main {
 
 .docs-footer-links ul a:hover {
   text-decoration: underline;
+}
+
+.footerSpace {
+  margin-bottom: 20px!important;
+}
+
+.footer-sitemap ul li h3 a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-sitemap ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-sitemap ul li a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.footer-sitemap ul li {
+  font-size: 14px;
+  list-style: none;
 }
 
 @media screen and (max-width: 884px){
