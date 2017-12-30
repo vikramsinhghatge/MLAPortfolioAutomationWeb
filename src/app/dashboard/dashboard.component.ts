@@ -10,13 +10,10 @@ import '../../assets/css/styles.css';
 })
 
 export class DashboardComponent {
-//  options: FormGroup;
+    selectedItem = 'WL';
 
-  /*  constructor(fb: FormBuilder) {
-      this.options = fb.group({
-        'fixed': false,
-        'top': 0,
-        'bottom': 0,
-      });
-    }*/
+    listClick(event, newValue) {
+        console.log(newValue);
+        this.selectedItem = newValue;
+    }
 }

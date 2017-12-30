@@ -1,3 +1,7 @@
 mat-card.salutation-container {
     margin-bottom: 24px;
 }
+
+.salutation-text{
+  color: #fff;
+}

@@ -2,9 +2,9 @@
 @import './marerial-icons.css';
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "font-awesome.min.css";
-
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
 body {
-    background: #0147A7;
-    color: #fff;
+    background: #fff;
+    color: #2E2E2E;
     margin: 0;
 }

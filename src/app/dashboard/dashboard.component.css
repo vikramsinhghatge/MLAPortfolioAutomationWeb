@@ -1,4 +1,4 @@
-.wrapper {
+/*.wrapper {
         display: flex;
 }
 
@@ -6,4 +6,147 @@
         min-width: 250px;
         max-width: 250px;
         height: 100vh;
+}*/
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+/*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url('https://fonts.googleapis.com/css?family=Ruda');*/
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ruda');
+
+.wrapper {
+    display: flex;
+    /*align-items: stretch;*/
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: 100vh;
+    background: #11bfd8;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    /*margin-left: -250px;*/
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #11bfd8;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+}
+#sidebar ul li a:hover {
+    color: #fff;
+    background: #50E3F8;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #018395;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+/*------------------------------*/
+
+/* ---------------------------------------------------
+    WAITING LIST SIDEBAR RIGHT STYLE
+----------------------------------------------------- */
+
+#waiting-list-sidebar{
+    background: #f2f2f2;
+}
+
+#waiting-list-sidebar p.header{
+  color: #11bfd8;
+  text-align: center;
+}
+
+#waiting-list-sidebar ul li.list-group-item {
+  background: #f2f2f2;
+  margin-bottom: 0px;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #d3d3d3;
+  font-family: 'Ruda', sans-serif;
+  font-size: 12px;
+}
+
+#waiting-list-sidebar ul li.list-group-item:hover{
+  background: #ddd;
+}
+
+#waiting-list-sidebar ul li.list-group-item:last-child, #waiting-list-sidebar ul li.list-group-item:last-child {
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+
+#waiting-list-sidebar ul li.list-group-item a.btn-close{
+  display: inline;
+  font-size: 12px;
+  padding: 0px;
 }
