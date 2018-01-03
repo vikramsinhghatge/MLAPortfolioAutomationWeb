@@ -135,6 +135,7 @@ p.link-box a {
 
 .footerSpace {
   margin-bottom: 20px!important;
+  padding: 0;
 }
 
 .footer-sitemap ul li h3 a {
@@ -155,6 +156,19 @@ p.link-box a {
 .footer-sitemap ul li {
   font-size: 14px;
   list-style: none;
+}
+
+ul.sosial-icon li {
+  display: inline;
+}
+
+.footer-social-title,
+.footer-apps-title {
+  color: #666;
+}
+
+.sosial-icon {
+  padding: 0;
 }
 
 @media screen and (max-width: 884px){
